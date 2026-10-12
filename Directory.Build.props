@@ -1,0 +1,1 @@
+<Project><PropertyGroup><RestorePackagesWithLockFile>true</RestorePackagesWithLockFile><Deterministic>true</Deterministic><RuntimeFrameworkVersion>8.0.31</RuntimeFrameworkVersion></PropertyGroup></Project>

@@ -1,0 +1,648 @@
+{
+  "scope": "All distinct NuGet packages from committed lock files, including build-only and non-Windows transitives. NuGet content hash checked against lock/.nupkg.metadata; raw archive SHA-512 checked separately against cache digest (signed NuGet archives can differ). Not all packages are included in win-x64 executable. Runtime notices are separately retained.",
+  "packages": [
+    {
+      "name": "LibreHardwareMonitorLib",
+      "version": "0.9.4",
+      "relationship": "Direct",
+      "contentHashSHA512": "g28q+5LkBEDGHLtN59KEzjQ9gJN52V62e/GCTkfeIJnW6bMwl9on6JzFPXrulNtE3twCVC88mdp7vnLKaUWh0A==",
+      "nupkgSha256": "61014d1d4efa00009b10b96d77ebef16123170984c7cfc9e15d9c05561bc9147",
+      "licenseType": "expression",
+      "license": "MPL-2.0",
+      "copyright": "LibreHardwareMonitor",
+      "project": "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor",
+        "commit": "b8077435b898d57539956388cddf49f7dacb86f7"
+      },
+      "includedNotices": []
+    },
+    {
+      "name": "Microsoft.NET.ILLink.Tasks",
+      "version": "8.0.31",
+      "relationship": "Direct",
+      "contentHashSHA512": "OJdAGATV2QoVWL11zlDLEluA06q8rK+cgZR47ohrO8V+Qj5z9dlvN7bG9/0e5t0IOe+yD8tREC0bpsEgDGrzIQ==",
+      "nupkgSha256": "b2ae5b55f8c123e10f00ba7599f5681ff6d74957baa2d03a19f7b6cb96a3b446",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "1219a42122cf5190c7f512850557e38c422430dc"
+      },
+      "includedNotices": [
+        "licenses/Microsoft.NET.ILLink.Tasks-8.0.31-LICENSE.TXT",
+        "licenses/Microsoft.NET.ILLink.Tasks-8.0.31-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "System.Security.Cryptography.ProtectedData",
+      "version": "8.0.0",
+      "relationship": "Direct",
+      "contentHashSHA512": "+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
+      "nupkgSha256": "7dbd296bdb10c4dfa6af4be75e0d4881bc78f4268ea92f860e44df58d6e852fb",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "5535e31a712343a63f5d7d796cd874e563e5ac14"
+      },
+      "includedNotices": [
+        "licenses/System.Security.Cryptography.ProtectedData-8.0.0-LICENSE.TXT",
+        "licenses/System.Security.Cryptography.ProtectedData-8.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "HidSharp",
+      "version": "2.1.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "UTdxWvbgp2xzT1Ajaa2va+Qi3oNHJPasYmVhbKI2VVdu1VYP6yUG+RikhsHvpD7iM0S8e8UYb5Qm/LTWxx9QAA==",
+      "nupkgSha256": "0b05b2a7367f85e0d61883387810a56b8cd33d707df8bdfdf536157bfccf7616",
+      "licenseType": "URL-only",
+      "license": "http://www.zer7.com/files/oss/hidsharp/LICENSE.txt",
+      "copyright": "Copyright 2010-2019 James Bellinger",
+      "project": "http://www.zer7.com/software/hidsharp",
+      "repository": null,
+      "includedNotices": []
+    },
+    {
+      "name": "Microsoft.NETCore.Platforms",
+      "version": "5.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "nupkgSha256": "2c8720d52b437102cf380069e0945722cf37eddef3d226bafbefb7485de39757",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://github.com/dotnet/runtime",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/dotnet/runtime",
+        "commit": "cf258a14b70ad9069470a108f13765e0e5988f51"
+      },
+      "includedNotices": [
+        "licenses/Microsoft.NETCore.Platforms-5.0.0-LICENSE.TXT",
+        "licenses/Microsoft.NETCore.Platforms-5.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "Microsoft.Win32.Registry",
+      "version": "5.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "dDoKi0PnDz31yAyETfRntsLArTlVAVzUzCIvvEDsDsucrl33Dl8pIJG06ePTJTI3tGpeyHS9Cq7Foc/s4EeKcg==",
+      "nupkgSha256": "f64ca53c67ca65ce7cc85a8d29aefbb2da2672836731e1115e8cd62730dc5080",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://github.com/dotnet/runtime",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/dotnet/runtime",
+        "commit": "cf258a14b70ad9069470a108f13765e0e5988f51"
+      },
+      "includedNotices": [
+        "licenses/Microsoft.Win32.Registry-5.0.0-LICENSE.TXT",
+        "licenses/Microsoft.Win32.Registry-5.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "Mono.Posix.NETStandard",
+      "version": "1.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "vSN/L1uaVwKsiLa95bYu2SGkF0iY3xMblTfxc8alSziPuVfJpj3geVqHGAA75J7cZkMuKpFVikz82Lo6y6LLdA==",
+      "nupkgSha256": "fc5eb593b318fdfbb615c7d6ec29328ee52ba0ac256005cf40555e0ecd509276",
+      "licenseType": "URL-only",
+      "license": "https://go.microsoft.com/fwlink/?linkid=869050",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://go.microsoft.com/fwlink/?linkid=869051",
+      "repository": null,
+      "includedNotices": []
+    },
+    {
+      "name": "runtime.android-arm.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "zF8HT4aoFZkWF4OxhFLxUNEfoIjyILg0aQhgIR3m+dbLE4yadMd7kdctMvPhYYaVpnilmBCIjiQsrxH4UC/JxQ==",
+      "nupkgSha256": "c671cedd922d16bfc091f26972df62515bcab98d89195923d0e230b37d6221f6",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.android-arm.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.android-arm.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.android-arm64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "JVRoxUTXhyFfDak3GLbZh9oPjz+eVJwiZQWOU/TQ1Nj7us11GMc97IBsRzjGDtGJvFOWhGhEkka8SYmVcwpA2A==",
+      "nupkgSha256": "9011a2049de26013a7bdf60375de62c0ed359cf15b9e619411bd6fb7ac169887",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.android-arm64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.android-arm64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.android-x64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "QMWQv8nptbkzEDPUOmVwo3l/ve1pgApqv/eGY/eIJoNCGxUP6MYUu/GHdznRaBlSkuRyhFN8osVyqZMFKlBA7g==",
+      "nupkgSha256": "ac6663fe970675e3128a977b348c477be758ef102097414ca271d0c9b64dc06b",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.android-x64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.android-x64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.android-x86.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "NRuTmUukSfpbv1wdJJXvWE/v1+aRHw5OxEODGeyKuFGy09uZIfFsdU1SPXB1cGPHsUaZRhZfOVel30zEgRQiUw==",
+      "nupkgSha256": "6e035b08d5eaeaae1ae53f870604958ccf2942dcfc64cb7683838ca7c3e333f4",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.android-x86.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.android-x86.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.linux-arm.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "l5/3/3LfkemzovK66DrxsbGXRXIgmHaqYaYdhFR09lawWbPHhq4HJ0u2FzO+/neidm8bJtJAV6+iixMDuYIBgg==",
+      "nupkgSha256": "4a49366a0880a1a56e3ab3b2d12ed99379cdf9c8fbd311defe7e221332915189",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.linux-arm.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.linux-arm.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.linux-arm64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "q69FDpp5XSq3lJUMyMpUXBXTh6ekNM1NCnM5aYYiIx4AY1cH/rgLSwR4n2wQJqC6yuL0Z/epSf3KoYLYT8++Yg==",
+      "nupkgSha256": "2e23d898ce7a09396a1b30141f5871f404eef5eff04abe653c78b801016f5414",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.linux-arm64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.linux-arm64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.linux-bionic-arm64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "kAOBq4UnR0B2UirRxLsPx4BIzt61Ydw40FFCe9NcFSncV6q+ikuhgN6eOrcaOcSu5QUiXacQRgFUX1Pux6ckYg==",
+      "nupkgSha256": "d927d5c0146ca30a3ebfb3ef557ac9844a77dcb155e8b7a2465493f43e83324f",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.linux-bionic-arm64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.linux-bionic-arm64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.linux-bionic-x64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "yCpRhte4+7C6ULKGA4qLaXGjQJwoygqyzgUN9u2tkfyGkwBUS66SRr6nNx522+4ATI8ZFkgIIZIkTczY77rcZw==",
+      "nupkgSha256": "b3afa0f13fd85560e329c86d1276333d3240cf81ee24351860987dd9b81b5723",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.linux-bionic-x64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.linux-bionic-x64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.linux-musl-arm.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "isaMOGqA4iIklwMt6wYTuPqj83D8DDUA2wainLqPjXaQ1Ri+5K8A+4J0BonjA/HMWtywBKnt2WGUXZ3DQN18ZA==",
+      "nupkgSha256": "a38f596cc8701088168e1b52b97f7b64034e819b13462bd2b90d2916f388baa8",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.linux-musl-arm.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.linux-musl-arm.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.linux-musl-arm64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "yWsWQTf7r1aigde6EeoHzHhldoBw6fJ8AHR2ow4kobNuaS9Z/9rvLUFsGkAAY8GMUZadF5S1OGUsIzUd17RZBg==",
+      "nupkgSha256": "8fee9679a61b61cae649596c407c1ca0c701238566c4fe1301ffe6513efd7115",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.linux-musl-arm64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.linux-musl-arm64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.linux-musl-x64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "NxST2ZRBRGBjHWUnQwOYoyqFWHH4UcjAeTyjviSTOdwjSqq1JuGdp4sLzPzGDLiu4R7Per3QQ1GxYoLgAlIbOA==",
+      "nupkgSha256": "3ae39d70b4f126d7460aad40d404fd9eb4d071e9b12bc76784f3fd95a64eafb8",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.linux-musl-x64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.linux-musl-x64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.linux-x64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "4bmb9oP1DIu2ArJ2MH2sNGbO5V3VrZ0+8lotr3cQ2G5hh66+0yHiYkwvlwP7gkSOsZPhANeX3cicqHYaDsroQA==",
+      "nupkgSha256": "7ef4966cada597e9df746616624814a8b4cc5f54eab6c7c0cbccf75f885e8982",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.linux-x64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.linux-x64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.maccatalyst-arm64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "k+VeOPbIx9A1/bmiw5pGBsuALGTA4UoC6SsGhcIMLyS6TMFgsjsOH1bAgim+/W1RdtR7dpPCWHNYhkrM8hXByA==",
+      "nupkgSha256": "f0b5004e80b92abf466ec09ec2c085403b6a73faff16e10ec1015d00da6312a7",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.maccatalyst-arm64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.maccatalyst-arm64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.maccatalyst-x64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "k1WC+Y7ht+7Omq5iW1v2Yz5CpaGGlLvlNsGS8cDAG0IN3sXUrPyUkC/40/zTL8g8/c3UFjrW0igXcwKNYa+ZuA==",
+      "nupkgSha256": "e366a36a4f16c3d75f99590b2a9e35c1b212fffa40493420c79244188c2629ba",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.maccatalyst-x64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.maccatalyst-x64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "iWyR+xohLUht80x5MREqF7zYD0KqyVpoS9uTg9raG0ddx5pvJkCPC4eS2JdkRYY6AqPjfMiiOEZ02ZWHEBgOvg==",
+      "nupkgSha256": "4219692e478f30e01508f18ce6337f5a6803dac18e3dedbc0923b1b66f2c662c",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.osx-arm64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "ebr6uFzuICKkw9YePnCo7CdZFKYYhJZOJDJhACAKyzbT5WFvJWMyeACJIWS0uqndGMgWSc+D+UDdBu6CEpUOSg==",
+      "nupkgSha256": "18d23072831829a92a2ebf95e6144d11608a284312c4051c94ab038a72b9fe0b",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.osx-arm64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.osx-arm64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "runtime.osx-x64.runtime.native.System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "66DA4FKnfIdrkyd8Kqym06s+F/U5/7TZdkV1DllGivUNUGkC8TG5W/3D4rhLoGQRjg0uurkPWqrQXWfPEghRpQ==",
+      "nupkgSha256": "1e5e25ae9caaf2104850b0ff94d95dd9759c5f9f807c61c4f26dd046b0e63b27",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/runtime.osx-x64.runtime.native.System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/runtime.osx-x64.runtime.native.System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "System.CodeDom",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "oTE5IfuMoET8yaZP/vdvy9xO47guAv/rOhe4DODuFBN3ySprcQOlXqO3j+e/H/YpKKR5sglrxRaZ2HYOhNJrqA==",
+      "nupkgSha256": "e7bf2570182cc16d1e335eabd049c9cdf1a874fc7ce91c711686477363d2cecc",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/System.CodeDom-9.0.0-LICENSE.TXT",
+        "licenses/System.CodeDom-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "System.IO.FileSystem.AccessControl",
+      "version": "5.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "SxHB3nuNrpptVk+vZ/F+7OHEpoHUIKKMl02bUmYHQr1r+glbZQxs7pRtsf4ENO29TVm2TH3AEeep2fJcy92oYw==",
+      "nupkgSha256": "73d3250ca25f8fadd846f97b6eb44136ce7da25ae66cbf86d40ea84d2f32b447",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://github.com/dotnet/runtime",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/dotnet/runtime",
+        "commit": "cf258a14b70ad9069470a108f13765e0e5988f51"
+      },
+      "includedNotices": [
+        "licenses/System.IO.FileSystem.AccessControl-5.0.0-LICENSE.TXT",
+        "licenses/System.IO.FileSystem.AccessControl-5.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "System.IO.Ports",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "NfEWew48r4MxHUnOQL7nw/5JBsz9dli8TJYpXjsAQu8tHH0QCq2ly4QMCc8wS9EAi1jvaFgq7ELdfwxvrKWALQ==",
+      "nupkgSha256": "2eb66c54e480bd24c16a70a52d083e8be3821c798e6282605750b27fe77bf3ea",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/System.IO.Ports-9.0.0-LICENSE.TXT",
+        "licenses/System.IO.Ports-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "System.Management",
+      "version": "9.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "bVh4xAMI5grY5GZoklKcMBLirhC8Lqzp63Ft3zXJacwGAlLyFdF4k0qz4pnKIlO6HyL2Z4zqmHm9UkzEo6FFsA==",
+      "nupkgSha256": "5322cee5d80d542eeb053d52ea8fc8c7a1101a5553496510b550befdcc9391f4",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://dot.net/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/runtime",
+        "commit": "9d5a6a9aa463d6d10b0b0ba6d5982cc82f363dc3"
+      },
+      "includedNotices": [
+        "licenses/System.Management-9.0.0-LICENSE.TXT",
+        "licenses/System.Management-9.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "System.Security.AccessControl",
+      "version": "5.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
+      "nupkgSha256": "b9e486f989fcd9ebf1c86067138f4de03fa780e0c35e0a2b9e506d4373a6c39e",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://github.com/dotnet/runtime",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/dotnet/runtime",
+        "commit": "cf258a14b70ad9069470a108f13765e0e5988f51"
+      },
+      "includedNotices": [
+        "licenses/System.Security.AccessControl-5.0.0-LICENSE.TXT",
+        "licenses/System.Security.AccessControl-5.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "System.Security.Principal.Windows",
+      "version": "5.0.0",
+      "relationship": "Transitive",
+      "contentHashSHA512": "t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
+      "nupkgSha256": "081390c25f6f78592b28ada853c24514488a221fe9f9a24efaaf5373643ff3d6",
+      "licenseType": "expression",
+      "license": "MIT",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://github.com/dotnet/runtime",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/dotnet/runtime",
+        "commit": "cf258a14b70ad9069470a108f13765e0e5988f51"
+      },
+      "includedNotices": [
+        "licenses/System.Security.Principal.Windows-5.0.0-LICENSE.TXT",
+        "licenses/System.Security.Principal.Windows-5.0.0-THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "name": "Microsoft.NETFramework.ReferenceAssemblies",
+      "version": "1.0.3",
+      "relationship": "Direct",
+      "contentHashSHA512": "vUc9Npcs14QsyOD01tnv/m8sQUnGTGOw1BCmKcv77LBJY7OxhJ+zJF7UD/sCL3lYNFuqmQEVlkfS4Quif6FyYg==",
+      "nupkgSha256": "141a093f90c7645d101ccd312e6f727781c965540eb92a52280f95411a698441",
+      "licenseType": "URL-only",
+      "license": "https://github.com/Microsoft/dotnet/blob/master/LICENSE",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://github.com/Microsoft/dotnet/tree/master/releases/reference-assemblies",
+      "repository": null,
+      "includedNotices": []
+    },
+    {
+      "name": "WixToolset.Dtf.CustomAction",
+      "version": "4.0.6",
+      "relationship": "Direct",
+      "contentHashSHA512": "n7naTp5HizmEUqz0kioApIc8odl+LgaxuoAbHqTrCmXoloTvnV63yyQQQNawWFTt4XbxUzg4976IbRlDSRUg2w==",
+      "nupkgSha256": "c68e10871b61a3775b0da578dac030f822a62058d32152382c070bed25560786",
+      "licenseType": "expression",
+      "license": "MS-RL",
+      "copyright": "Copyright (c) .NET Foundation and contributors. All rights reserved.",
+      "project": "https://wixtoolset.org/",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/wixtoolset/wix",
+        "commit": "73c897383236ddbbbc6ba257634013c1269ceec2"
+      },
+      "includedNotices": []
+    },
+    {
+      "name": "Microsoft.NETFramework.ReferenceAssemblies.net48",
+      "version": "1.0.3",
+      "relationship": "Transitive",
+      "contentHashSHA512": "zMk4D+9zyiEWByyQ7oPImPN/Jhpj166Ky0Nlla4eXlNL8hI/BtSJsgR8Inldd4NNpIAH3oh8yym0W2DrhXdSLQ==",
+      "nupkgSha256": "8a7e348538e7eb91351696911689f49e3d4f63f8bab517432bbe159b8b1104a2",
+      "licenseType": "URL-only",
+      "license": "https://github.com/Microsoft/dotnet/blob/master/LICENSE",
+      "copyright": "\u00a9 Microsoft Corporation. All rights reserved.",
+      "project": "https://github.com/Microsoft/dotnet/tree/master/releases/reference-assemblies",
+      "repository": null,
+      "includedNotices": []
+    },
+    {
+      "name": "WixToolset.Dtf.WindowsInstaller",
+      "version": "4.0.6",
+      "relationship": "Transitive",
+      "contentHashSHA512": "N2ZXs8FvaVNcW33zmyWbXzqwwh/f7SPKfbIx42ZLGiSwnH33Drhdgue44ubFSNTe7a+vtrt2JcAV8euQLB+ymA==",
+      "nupkgSha256": "bf013d52f9386fab124f0caf227fd70768b3eb15f93267de43beb36b21f95af6",
+      "licenseType": "expression",
+      "license": "MS-RL",
+      "copyright": "Copyright (c) .NET Foundation and contributors. All rights reserved.",
+      "project": null,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/wixtoolset/wix",
+        "commit": "73c897383236ddbbbc6ba257634013c1269ceec2"
+      },
+      "includedNotices": []
+    }
+  ]
+}

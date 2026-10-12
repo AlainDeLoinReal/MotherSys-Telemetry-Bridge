@@ -1,0 +1,26 @@
+name: Auditable source and MSI build (no binary publication)
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-build:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9
+        with:
+          dotnet-version: 8.0.425
+      - name: Audit all public history
+        run: python scripts/audit-repository.py
+      - name: Build Bridge, installer, uninstaller actions and provenance
+        shell: pwsh
+        run: ./scripts/Build-Package.ps1
+      - name: Recheck history after build
+        run: python scripts/audit-repository.py
+      # No upload-artifact and no GitHub Release: unsigned binaries remain on the temporary runner.

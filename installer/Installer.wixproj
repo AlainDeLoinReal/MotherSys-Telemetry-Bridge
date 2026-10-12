@@ -1,0 +1,9 @@
+<Project Sdk="WixToolset.Sdk/4.0.6">
+  <PropertyGroup>
+    <OutputName>MotherSys-Telemetry-Bridge-1.3.0-preview</OutputName>
+    <InstallerPlatform>x64</InstallerPlatform>
+    <DefineConstants>BridgePublishDir=$(MSBuildThisFileDirectory)..\artifacts\Bridge;ActionsPath=$(MSBuildThisFileDirectory)Actions\bin\x64\Release\net48\MotherSys.InstallerActions.CA.dll</DefineConstants>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup><Compile Include="Package.wxs"/><Compile Include="Files.generated.wxs"/></ItemGroup>
+</Project>

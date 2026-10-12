@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+artifacts/
+*.user
+*.suo
+*.pfx
+*.p12
+*.key
+*.pem
+grants.bin*
+
+installer/Files.generated.wxs
+
+__pycache__/
+*.pyc

@@ -1,0 +1,19 @@
+{
+  "bridgeVersion": "1.2.1",
+  "revision": "R1.2 Preview rev.1",
+  "allowedOrigin": "https://8a6d3033.mothersys-classic-web.pages.dev",
+  "qaArchiveSha256": "0b299eceab441f2624b9cff238713186efb816d75663c61048df1b75e92bcd4d",
+  "qaExeSha256": "0f637e229ae8f6bff5443188a87f817f81827cfc405da235cb466bdbdeb14135",
+  "binaryPubliclyDistributed": false,
+  "authenticode": "UNSIGNED",
+  "windowsLive": "NOT RUN",
+  "sourceFilesSha256": {
+    "AccessPolicy.cs": "34f4c61c4cfc20270c2fa0836580e2cf687b9a2ce1310f9c3c3c907398487b5e",
+    "MotherSys.TelemetryBridge.csproj": "f9abc020c6b72131bc9aecfc5e742a021a8535086e79ced1c9bf89f03d1cad68",
+    "Pairing.cs": "b1419cb6fbf8fd059874b20ebf9a8b5095fa7a97af57d8bdb19167afad5b6a2f",
+    "Program.cs": "688f98b325bc7ab8c81bd2189670c0b6ec74b79ab21e3592d927f66a13e4220d",
+    "WindowsCollector.cs": "207e7db765c6abab6459c218fbb9ec7e420e8b277267e2f7ba8c01d93e0595bb",
+    "app.manifest": "6f3121cd24faeeabab10f2da279ac7b86eb0a392f58e5b8aa2fefb7eaff404c9"
+  },
+  "note": "Imported source files match the private QA build inputs byte-for-byte. Public build adds locked dependency/runtime configuration. A rebuilt executable has not been proven byte-identical to the historical QA executable."
+}
