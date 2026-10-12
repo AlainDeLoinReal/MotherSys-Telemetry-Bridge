@@ -3,28 +3,28 @@ $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 Push-Location $root
 try {
-  function Dotnet { param([Parameter(ValueFromRemainingArguments=$true)][string[]]$arguments) & dotnet @arguments; if ($LASTEXITCODE -ne 0) { throw "dotnet failed with exit code $LASTEXITCODE" } }
+  function Invoke-Dotnet { param([Parameter(ValueFromRemainingArguments=$true)][string[]]$arguments) & dotnet @arguments; if ($LASTEXITCODE -ne 0) { throw "dotnet failed with exit code $LASTEXITCODE" } }
   $commit = (& git rev-parse HEAD).Trim()
   if ($LASTEXITCODE -ne 0) { throw 'Build must run from a Git checkout.' }
   if ((& git status --porcelain).Length -ne 0) { throw 'Commit the reviewed source before making a provenance package.' }
   $tag = & git describe --tags --exact-match 2>$null
   if ($LASTEXITCODE -ne 0) { $tag = $null }
   if ((& dotnet --version).Trim() -ne '8.0.425') { throw 'SDK must be 8.0.425.' }
-  Dotnet @('restore','tests/Pairing/Pairing.csproj','--locked-mode')
-  Dotnet @('run','--project','tests/Pairing/Pairing.csproj','--no-restore','-c','Release')
-  Dotnet @('restore','tests/Lifecycle/Lifecycle.csproj','--locked-mode')
-  Dotnet @('run','--project','tests/Lifecycle/Lifecycle.csproj','--no-restore','-c','Release')
-  Dotnet @('restore','bridge/MotherSys.TelemetryBridge.csproj','-r','win-x64','--locked-mode')
-  Dotnet @('publish','bridge/MotherSys.TelemetryBridge.csproj','-c','Release','-r','win-x64','--self-contained','true','--no-restore','-o','artifacts/Bridge')
+  Invoke-Dotnet @('restore','tests/Pairing/Pairing.csproj','--locked-mode')
+  Invoke-Dotnet @('run','--project','tests/Pairing/Pairing.csproj','--no-restore','-c','Release')
+  Invoke-Dotnet @('restore','tests/Lifecycle/Lifecycle.csproj','--locked-mode')
+  Invoke-Dotnet @('run','--project','tests/Lifecycle/Lifecycle.csproj','--no-restore','-c','Release')
+  Invoke-Dotnet @('restore','bridge/MotherSys.TelemetryBridge.csproj','-r','win-x64','--locked-mode')
+  Invoke-Dotnet @('publish','bridge/MotherSys.TelemetryBridge.csproj','-c','Release','-r','win-x64','--self-contained','true','--no-restore','-o','artifacts/Bridge')
   Copy-Item licenses artifacts/Bridge/licenses -Recurse -Force
   Copy-Item LICENSE artifacts/Bridge/licenses/MotherSys-MIT.txt -Force
   Copy-Item docs/PRIVACY.md artifacts/Bridge/PRIVACY.md -Force
   Copy-Item docs/INSTALL.md artifacts/Bridge/INSTALL.md -Force
-  Dotnet @('restore','installer/Actions/Actions.csproj','--locked-mode','-p:Platform=x64')
-  Dotnet @('build','installer/Actions/Actions.csproj','-c','Release','--no-restore','-p:Platform=x64')
+  Invoke-Dotnet @('restore','installer/Actions/Actions.csproj','--locked-mode','-p:Platform=x64')
+  Invoke-Dotnet @('build','installer/Actions/Actions.csproj','-c','Release','--no-restore','-p:Platform=x64')
   & python scripts/generate-installer.py
   if ($LASTEXITCODE -ne 0) { throw 'MSI file manifest generation failed.' }
-  Dotnet @('build','installer/Installer.wixproj','-c','Release','-o','artifacts/Installer')
+  Invoke-Dotnet @('build','installer/Installer.wixproj','-c','Release','-o','artifacts/Installer')
   $installer = Get-Item 'artifacts/Installer/MotherSys-Telemetry-Bridge-1.3.0-preview.msi'
   $exe = Get-Item 'artifacts/Bridge/MotherSys.TelemetryBridge.exe'
   $signature = Get-AuthenticodeSignature -LiteralPath $installer.FullName
