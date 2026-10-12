@@ -17,6 +17,9 @@
       <Component Id="StartMenuShortcut" Guid="42F3B13B-2A9B-4B15-BA2C-D671D83190AF">
         <Shortcut Id="BridgeShortcut" Name="MotherSys Telemetry Bridge" Target="[INSTALLFOLDER]MotherSys.TelemetryBridge.exe" Arguments="--background" WorkingDirectory="INSTALLFOLDER"/>
         <RemoveFolder Id="RemoveBridgeMenu" On="uninstall"/>
+        <!-- Standard RemoveFolder only removes empty directories; never recursively deletes other MotherSys files. -->
+        <RemoveFolder Id="RemoveEmptyTelemetryRoot" Directory="TelemetryBridgeFolder" On="uninstall"/>
+        <RemoveFolder Id="RemoveEmptyMotherSysRoot" Directory="MotherSysFolder" On="uninstall"/>
         <RegistryValue Root="HKCU" Key="Software\MotherSys\TelemetryBridge\R1.3" Name="StartMenuShortcut" Type="integer" Value="1" KeyPath="yes"/>
       </Component>
     </Directory></StandardDirectory>

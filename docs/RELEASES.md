@@ -1,6 +1,6 @@
 # Release provenance and publication gates
 
-Current source tag: v1.3.0-lifecycle-source.1. Current Bridge version: 1.3.0 lifecycle candidate. No official public installer exists. The private QA installer is unsigned. No GitHub Release or public QA executable asset is authorized.
+Current source tag: v1.3.0-lifecycle-source.3. Current Bridge version: 1.3.0 lifecycle candidate. No official public installer exists. The private QA installer is unsigned. No GitHub Release or public QA executable asset is authorized.
 
 Every future official installer must state:
 

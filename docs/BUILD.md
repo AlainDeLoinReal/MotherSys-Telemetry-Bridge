@@ -4,12 +4,12 @@
 
 Windows 11 x64 (including .NET Framework 4.8 or 4.8.1 for MSI custom actions), Python 3 for the file-manifest generator, and the official .NET SDK **8.0.425**, selected by global.json. No administrator privileges are needed to build or install Bridge. Restore needs nuget.org; normal Bridge operation does not. Linux can run the pairing tests and cross-compile the Windows target; it cannot qualify installation, tray, DPAPI or hardware collection.
 
-Clone https://github.com/AlainDeLoinReal/MotherSys-Telemetry-Bridge and check out the exact published source tag (initial tag: `v1.3.0-lifecycle-source.1`). Record `git rev-parse HEAD` before building.
+Clone https://github.com/AlainDeLoinReal/MotherSys-Telemetry-Bridge and check out the exact published source tag (reviewed candidate tag: `v1.3.0-lifecycle-source.3`). Record `git rev-parse HEAD` before building.
 
 ```powershell
 git clone https://github.com/AlainDeLoinReal/MotherSys-Telemetry-Bridge.git
 cd MotherSys-Telemetry-Bridge
-git checkout v1.3.0-lifecycle-source.1
+git checkout v1.3.0-lifecycle-source.3
 git rev-parse HEAD
 dotnet --version
 dotnet restore tests/Pairing/Pairing.csproj --locked-mode
@@ -30,4 +30,6 @@ SDK 8.0.425, runtime 8.0.31, lock files and deterministic compiler settings redu
 
 ## GitHub build
 
-The public Actions workflow builds and tests on Windows, on push/PR and manual dispatch. Actions are pinned to reviewed commit SHAs and permissions are read-only. The workflow records source commit and installer/ZIP hashes in the run summary, then runs the repository audit. It uploads no unsigned binaries and creates no Releases. Code signing and release approval are separate gates.
+The public Actions workflow builds and tests on Windows, on push/PR and manual dispatch. Actions are pinned to reviewed commit SHAs and permissions are read-only. The workflow records source commit and installer/EXE hashes in the run summary, then runs the repository audit. It uploads no unsigned binaries and creates no Releases. Code signing and release approval are separate gates.
+
+MSI validation remains enabled. ICE91 warnings identify the intentionally fixed per-user paths; this package does not offer per-machine installation. Empty parent directories are scheduled with standard RemoveFolder rows, which preserve non-empty folders and other MotherSys components. See [Microsoft ICE64](https://learn.microsoft.com/en-us/windows/win32/msi/ice64), [ICE91](https://learn.microsoft.com/en-us/windows/win32/msi/ice91) and [WiX RemoveFolder](https://docs.firegiant.com/wix/schema/wxs/removefolder/). Actual Windows uninstall preservation still needs the documented QA.
